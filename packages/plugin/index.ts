@@ -3,6 +3,15 @@ import type { PluginOption } from "vite";
 export function Plugin(): PluginOption {
   return {
     name: "lol-plugin",
-    configureServer(server) {},
+    configResolved({ root }){
+      console.log({ root })
+    },
+    configureServer(server) {
+        // HOW DO I DO THIS?!
+        // const { moduleId } = await import(lolEntry);
+      
+        // cwd
+        // read file in cwd+path 
+    },
   };
 }
