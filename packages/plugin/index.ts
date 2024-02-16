@@ -6,7 +6,7 @@ export function Plugin(): PluginOption {
     configResolved({ root }){
       console.log({ root })
     },
-    configureServer(server) {
+    configureServer(_server) {
         // HOW DO I DO THIS?!
         // const { moduleId } = await import(lolEntry);
       

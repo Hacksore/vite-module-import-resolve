@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 import { Plugin } from "plugin";
 
 // https://vitejs.dev/config/
@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        lolEntry: 'src/main.tsx'
-      }
-    }
-  }
-})
+        lolEntry: "src/main.tsx",
+      },
+    },
+  },
+});
