@@ -8,8 +8,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        lolEntry: "src/main.tsx",
+        lolEntry: "src/main.ts",
       },
     },
   },
+  server: {
+    host: '0.0.0.0',
+    port: 3000
+  }
 });
